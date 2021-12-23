@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_sucursal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/btn_sucursal_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Seleccionar" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_sucursal_campo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Nombre"/>
+
+    <EditText
+        android:id="@+id/edit_sucursal_campo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Descripcion"/>
+
+    <EditText
+        android:id="@+id/edit_sucursal_campo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType=""
+        android:hint="Location"/>
+
+    <EditText
+        android:id="@+id/edit_sucursal_campo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Favorito 0->No 1->Si"/>
+
+    <Button
+        android:id="@+id/btn_sucursal_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sucursal_consultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/btn_sucursal_actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/btn_sucursal_borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:text="Borrar" />
+
+        <EditText
+            android:id="@+id/edit_sucursal_id"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="ID"
+            android:text="" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
